@@ -13,8 +13,8 @@ export class DishService {
     return DISHES;
   }
 
-  getDish(id: String): Dish {
-    return DISHES.filter((dish) => (dish.id === id))[0];
+  getDish(name: String): Dish {
+    return DISHES.filter((dish) => (dish.name === name))[0];
   }
 
   getFeaturedDish(): Dish {
